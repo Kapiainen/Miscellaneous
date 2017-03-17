@@ -14,7 +14,11 @@ void main(string[] args)
 			JSONValue config = parseJSON(readFile(config_file_path));
 			if(settingExists(config, "rainmeter_executable_path"))
 			{
-				final_arguments ~= getStringSetting(config, "rainmeter_executable_path");
+				string rainmeter_path = getStringSetting(config, "rainmeter_executable_path");
+				if(exists(rainmeter_path))
+				{
+					final_arguments ~= rainmeter_path;
+				}
 				final_arguments ~= args[1..$];
 			}
 		} else { // Config file does not exist, first argument must be the path to the Rainmeter executable
