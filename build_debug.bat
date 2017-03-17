@@ -1,0 +1,2 @@
+@dmd RainmeterBangExecutor.d
+@pause
