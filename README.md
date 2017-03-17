@@ -12,3 +12,7 @@ You can either set the path to the Rainmeter executable in the `RainmeterBangExe
 Add [Rainmeter bangs](https://docs.rainmeter.net/manual/bangs/) as additional arguments in the shortcut's `Target` field as you wish. For example, `"!ToggleFade" "SomeConfigName"`.
 
 You can use Windows' built-in ability to assign hotkeys to shortcuts to execute the Rainmeter bangs defined in the shortcut's `Target` field.
+
+## Changelog
+Version 1.0.0 - 2017/03/17:
+- Initial release.
